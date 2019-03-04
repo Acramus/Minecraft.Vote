@@ -40,7 +40,7 @@ public class Vote extends JavaPlugin {
         getServer().getPluginManager().registerEvents(commandExecutor, this);
         
         // Hook onto Bukkit's command event
-        this.getCommand("vote").setExecutor(commandExecutor);
+        this.getCommand("voting").setExecutor(commandExecutor);
         
         // Enable permissions
         setupPermissions();
