@@ -6,9 +6,9 @@ website: http://github.com/rabidcrab
 description: Fully customizable voting system designed for admins who want specialized vote types
 softdepend: [Vault]
 commands:
-    vote:
-        description: Voting system. /vote help will give you all options available
-        usage: /vote
+    voting:
+        description: Voting system. /voting help will give you all options available
+        usage: /voting
         aliases: [voter, rabidvote, ivote]
 permissions:
     vote.voteyes.*:
