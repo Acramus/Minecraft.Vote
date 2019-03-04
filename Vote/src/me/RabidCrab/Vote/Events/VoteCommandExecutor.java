@@ -47,7 +47,7 @@ public class VoteCommandExecutor implements CommandExecutor, Listener
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) 
 	{
-		if(label.equalsIgnoreCase("vote") && sender != null && args != null)
+		if(label.equalsIgnoreCase("voting") && sender != null && args != null)
 		{
 			if (args.length < 1)
 			    displayGeneralHelp(sender);
@@ -172,7 +172,7 @@ public class VoteCommandExecutor implements CommandExecutor, Listener
                 // and pass those arguments along with the others to start the vote
                 ActiveVote.beginVote(plugin, sender, Vote.configuration.getPlayerVote(plugin, s), extraArgs);
                 
-              //Vote started, vote for AFK players
+              //Voting started, vote for AFK players
                 /*try{
                     // Updated for Spigot. Finally people who utilize lists instead of arrays, except for the fact
                     // I had to originally code for an array, and I never worked with Java lists
@@ -187,9 +187,9 @@ public class VoteCommandExecutor implements CommandExecutor, Listener
                         }else{
                             //Did not Vote yet
                             if(AFK_API.isInstalled()(p)){
-                                p.chat("/vote yes");
+                                p.chat("/voting yes");
                             }else if(AFK_API.isInInventory(p)){
-                                p.chat("/vote yes");
+                                p.chat("/voting yes");
                             }
                         }
                     }
